@@ -10,6 +10,3 @@
 [submodule "third_party/filesystem"]
   path = third_party/filesystem
   url = https://github.com/gulrak/filesystem
-[submodule "third_party/tinyxml2"]
-	path = third_party/tinyxml2
-	url = https://github.com/leethomason/tinyxml2.git
