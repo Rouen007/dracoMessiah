@@ -67,6 +67,12 @@ class GeometryAttribute {
     JOINTS,
     WEIGHTS,
 #endif
+#ifdef MESSIAH_ARGUMENT
+    TEX_COORD2,
+    BINORMAL,
+    INDICES,
+    INDICES_NAME,
+#endif
     // Total number of different attribute types.
     // Always keep behind all named attributes.
     NAMED_ATTRIBUTES_COUNT,
