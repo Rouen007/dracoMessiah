@@ -128,6 +128,10 @@ macro(draco_set_default_options)
     HELPSTRING "Enable the Draco transcoder."
     VALUE OFF)
   draco_option(
+    NAME MESSIAH_ARGUMENT
+    HELPSTRING "Enable messiah mesh argument."
+    VALUE OFF)
+  draco_option(
     NAME DRACO_DEBUG_COMPILER_WARNINGS
     HELPSTRING "Turn on more warnings."
     VALUE OFF)
@@ -240,6 +244,9 @@ macro(draco_set_optional_features)
     draco_enable_feature(FEATURE "DRACO_TRANSCODER_SUPPORTED")
   endif()
 
+  if(MESSIAH_ARGUMENT)
+    draco_enable_feature(FEATURE "MESSIAH_ARGUMENT")
+  endif()
 
 endmacro()
 
